@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Title>Hypar Elements G3</Title>
+    <PackageDescription>A very thin wrapper around Geometry3Sharp.</PackageDescription>
+    <PackageId>Hypar.Elements.G3</PackageId>
+    <PackageProjectUrl>
+      https://github.com/hypar-io/Elements.G3</PackageProjectUrl>
+    <Version>1.0.0</Version>
+    <Authors>Andrew Heumann</Authors>
+    <Company>Hypar</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".\Readme.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Hypar.Elements" Version="2.1.0"/>
+    <PackageReference Include="geometry3Sharp" Version="1.0.324"/>
+  </ItemGroup>
+</Project>
